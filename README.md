@@ -29,3 +29,5 @@ We can see several issues with this example:
 * nextUrl.href is not showing the actual resource href but a sanitized one.
 * In cases where we randomize things without storing values, or in cases where the service returns different data for the page request and the json request, we get a "layout shift". With a page showing for the prerender and a totally different page is shown after hydration.
 * A workaround for this would be to omit running middleware for the json file but we can't do it in the matcher.
+
+[DEMO](https://middleware-issues-poc.vercel.app)
